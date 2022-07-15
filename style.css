@@ -1,0 +1,35 @@
+:root {
+	--left-right-gap: 15px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Courier New', Courier, monospace;
+	background-color: #111;
+	color: whitesmoke;
+}
+
+::selection {
+	background-color: red;
+	color: whitesmoke;
+}
+
+.container {
+	width: calc(800px - var(--left-right-gap) * 2.0);
+	padding: 0 var(--left-right-gap);
+	margin: 0 auto;
+}
+
+.header {
+	background-color: blueviolet;
+	color: #fff;
+	padding: 20px 0;
+	font-weight: 900;
+}
+
+@media (max-width: 800px) {
+	.container {
+		width: auto;
+	}
+}
