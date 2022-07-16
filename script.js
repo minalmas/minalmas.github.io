@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 const run = (arr, callback) => {
 	arr.forEach((text, index) => {
 		window.setTimeout(() => {
-			content.innerHTML += '<p>' + text + '</p>';
+			content.innerHTML += `<p>${text}</p>`;
 			index == arr.length - 1 && typeof callback === 'function' && callback();
 		}, 500 * (index + 1));
 	});
